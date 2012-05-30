@@ -266,3 +266,16 @@ p, body, div {
 h1,h2,h3,h4,h5, .navbar-inner li a, .brand {
 	font-family:Georgia, arial, sans-serif;
 }
+
+.grid.gallery .item.text {
+    background-color: #b5d00a;
+}
+
+.grid.gallery .inner {
+    margin: 10px;
+}
+
+ul.pager {
+    margin-top: 1em !important;
+    padding-top: 1em !important;
+}

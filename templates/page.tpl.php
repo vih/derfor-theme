@@ -19,7 +19,7 @@
 	<div class="clearfix">
 		<?php
 		$hideSidebar = false;
-		if(arg(0) == 'nyeste_svar' || arg(0) == 'populaere_svar' || arg(0) == 'tidligere_spoergsmaal' || arg(0) == 'billeder') {
+		if(arg(0) == 'nyeste_svar' || arg(0) == 'populaere_svar' || arg(0) == 'tidligere_spoergsmaal' || arg(0) == 'billeder' || arg(0) == 'videoer') {
 			echo '<div><div>';
 			$hideSidebar = true;
 		}
