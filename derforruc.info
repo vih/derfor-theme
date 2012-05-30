@@ -1,0 +1,7 @@
+name = Derfor RUC
+description = Derfor Ruc Standard Theme
+package = Derfor RUC
+version = 1.0
+core = 7.x
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/custom.css
