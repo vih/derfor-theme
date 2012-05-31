@@ -3,7 +3,7 @@
 		<?php echo $title; ?>	
 	</h2>
     <div>
-		<?php echo render($content['field_ruc_video']); ?>
+		<?php echo render($content['field_ruc_video_link']); ?>
 	</div>
 	<p style="margin-top: 2em;">
 		<?php 
@@ -20,6 +20,7 @@
 		if(!empty($user->uid)) { $youFlagged = $flag->is_flagged($node->nid,$user->uid); }
 		$countFlags = $flag->get_count($node->nid);
 		
+		$msg = '';
 		if($countFlags == 0) {
 			//$msg = 'Ingen synes om videoen';
 		}
