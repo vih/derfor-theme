@@ -11,13 +11,25 @@
     </div>
 </div>
 <?php
+$must_be_pics = 12;
+$row_pics = 1;
 foreach ($rows as $row_number => $columns) {
+    print '<div class="row-'.$row_number.'">';
 	foreach($columns as $column_number => $item) {
-	    if (empty($item)) {
-	        continue;
-	    }
-		echo '<div class="item">'.$item.'</div>';
+		echo '<div class="item col-'.$column_number.'">'.$item.'</div>';
+		$row_pics++;
 	}
-} 
+	echo '</div>';
+}
+$missing_pics = $must_be_pics - $row_pics;
+
+if ($missing_pics != 0)  {
+    for ($i = 0; $i < $missing_pics; $i++) {
+        $z = $i+1;
+        $x = $i+2;
+        echo '<div class="row-'.$z.'"><div class="item col-'.$x.'"></div></div>';
+    }
+}
+ 
 ?>
 </div>
