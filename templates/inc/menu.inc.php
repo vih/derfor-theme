@@ -4,6 +4,7 @@ if($is_front) { $act = 'home'; }
 if(arg(0) == 'nyeste_svar') { $act = 'all'; }
 if(arg(0) == 'populaere_svar') { $act = 'pop'; }
 if(arg(0) == 'tidligere_spoergsmaal') { $act = 'ques'; }
+if(arg(0) == 'videoer') { $act = 'videoer'; }
 ?>
 	<div class="navbar">
 		<div class="navbar-inner">
@@ -15,6 +16,7 @@ if(arg(0) == 'tidligere_spoergsmaal') { $act = 'ques'; }
             <li<?php if($act=='all') {?> class="active"<?php } ?>><a href="<?php echo url('nyeste_svar'); ?>">Alle svar</a></li>
             <li<?php if($act=='pop') {?> class="active"<?php } ?>><a href="<?php echo url('populaere_svar'); ?>">Populære svar</a></li>
             <li<?php if($act=='ques') {?> class="active"<?php } ?>><a href="<?php echo url('tidligere_spoergsmaal'); ?>">Tidligere spørgsmål</a></li>
+            <li<?php if($act=='videoer') {?> class="active"<?php } ?>><a href="<?php echo url('videoer'); ?>">Videoer</a></li>
 					</ul>
           
 					<!--<form class="navbar-search pull-right" action="">
