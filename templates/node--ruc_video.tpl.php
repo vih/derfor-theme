@@ -1,3 +1,10 @@
+<?php if (!$page): ?>
+<?php
+echo '<a href="node/'.$node->nid.'">';
+echo theme_image(array('path' => $node->field_ruc_video_thumb['und'][0]['uri'], 'attributes' => array()));
+echo '</a>';
+?>
+<?php else: ?>
 <div>
 	<h2>
 		<?php echo $title; ?>	
@@ -40,3 +47,4 @@
 		?>
 	</p>
 </div>
+<?php endif; ?>
