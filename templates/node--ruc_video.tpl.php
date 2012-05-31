@@ -1,11 +1,9 @@
 <?php if (!$page): ?>
-<?php
-echo '<a href="node/'.$node->nid.'">';
-echo theme_image(array('path' => $node->field_ruc_video_thumb['und'][0]['uri'], 'attributes' => array()));
-echo '</a>';
-?>
+<a class="colorbox" href="<?php echo url('node/' . $node->nid, array('query' => array('width' => 640, 'height' => 480, 'template' => 'colorbox'))); ?>">
+    <?php echo theme_image(array('path' => $node->field_ruc_video_thumb['und'][0]['uri'], 'attributes' => array())); ?>
+</a>
 <?php else: ?>
-<div>
+<div id="rucvideo">
 	<h2>
 		<?php echo $title; ?>	
 	</h2>

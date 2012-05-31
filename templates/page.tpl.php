@@ -1,3 +1,9 @@
+<?php
+if (isset($_GET['template']) && $_GET['template'] == 'colorbox'){
+  print render($page['content']);
+  exit;
+}
+?>
 <?php print render($page['header']); ?>
 <script type="text/javascript">
 
