@@ -5,24 +5,9 @@ if (isset($_GET['template']) && $_GET['template'] == 'colorbox'){
 }
 ?>
 <?php print render($page['header']); ?>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-31734643-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 <div class="container background">
 	<?php include('inc/menu.inc.php'); ?>
-	
-	
-	<div class="clearfix">
+ 	<div class="clearfix">
 		<?php
 		$hideSidebar = false;
 		if(arg(0) == 'nyeste_svar' || arg(0) == 'populaere_svar' || arg(0) == 'tidligere_spoergsmaal' || arg(0) == 'billeder' || arg(0) == 'videoer') {
@@ -47,7 +32,6 @@ if (isset($_GET['template']) && $_GET['template'] == 'colorbox'){
 					</div>
 					<?php if ($tabs): ?><?php print render($tabs); ?></div><?php endif; ?>
 					<?php print render($tabs2); ?>
-					
 				<?php print render($page['footer']); ?>
 		</div></div>
 		<?php if(!$hideSidebar) { ?>

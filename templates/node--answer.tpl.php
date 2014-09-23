@@ -19,7 +19,7 @@ if(!$page) {
 <? } else { ?>
 <div class="answernode">
 	<h2>
-		<?php	
+		<?php
 		echo $node->field_question_reference['und'][0]['entity']->title.': ';
 		echo $node->field_question_reference['und'][0]['entity']->field_question['und'][0]['value'];
 		?>
