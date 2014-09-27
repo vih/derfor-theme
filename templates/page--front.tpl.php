@@ -58,7 +58,6 @@
 	<div>
 	    <?php echo views_embed_view('ruc_videoer','block_1'); ?>
 	</div>
-	
 	<div>
 		<?php
 		echo views_embed_view('popul_re_svar','block_1');

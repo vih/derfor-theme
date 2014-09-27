@@ -11,7 +11,7 @@
     </div>
 </div>
 <?php
-$must_be_pics = 12;
+$must_be_pics = 2;
 $row_pics = 1;
 foreach ($rows as $row_number => $columns) {
   print '<div class="row-'.$row_number.'">';

@@ -8,6 +8,6 @@ foreach ($rows as $row_number => $columns) {
 		echo '<div class="item '.$column_classes[$row_number][$column_number].'">'.$item.'</div>';
 	}
 	echo '</div>';
-} 
+}
 ?>
 </div>
