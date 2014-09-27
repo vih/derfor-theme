@@ -1,6 +1,4 @@
-<?php
-if(!$page) {
-?>
+<?php if (!$page) { ?>
 	<div class="clearfix">
 		<h2 style="float:right;"><?php echo $node->field_question_reference['und'][0]['entity']->title; ?></h2>
 	</div>
@@ -16,7 +14,7 @@ if(!$page) {
 	</p>
 	<a href="<?php echo $node_url; ?>">Læs hele svaret...</a>
 
-<? } else { ?>
+<?php } else { ?>
 <div class="answernode">
 	<h2>
 		<?php
@@ -53,7 +51,7 @@ if(!$page) {
 		$flag = flag_get_flag('answeragree');
 		if(!empty($user->uid)) { $youFlagged = $flag->is_flagged($node->nid,$user->uid); }
 		$countFlags = $flag->get_count($node->nid);
-		
+
 		if($countFlags == 0) {
 			//$msg = 'Ingen har markeret sig som enig';
 		}
@@ -74,7 +72,6 @@ if(!$page) {
 			$msg.= ' i dette svar';
 		}
 		echo '<span class="agreemsg">'.$msg.'</span>';
-		
 		?>
 	</p>
 </div>

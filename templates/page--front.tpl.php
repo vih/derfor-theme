@@ -32,7 +32,7 @@
 			</p><p>
 				Ib Poulsen<br />
 				Rektor
-			</p>	
+      </p>
 			<p>
 			<!-- AddThis Button BEGIN -->
 			<div class="addthis_toolbox addthis_default_style addthis_default_style">

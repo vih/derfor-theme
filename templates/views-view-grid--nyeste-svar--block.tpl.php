@@ -18,6 +18,6 @@ foreach ($rows as $row_number => $columns) {
 		echo '<div class="item '.$cid.'">'.$item.'</div>';
 	}
 	echo '</div>';
-} 
+}
 ?>
 </div>

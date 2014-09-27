@@ -18,17 +18,15 @@ if(arg(0) == 'videoer') { $act = 'videoer'; }
             <li<?php if($act=='ques') {?> class="active"<?php } ?>><a href="<?php echo url('tidligere_spoergsmaal'); ?>">Tidligere spørgsmål</a></li>
             <li<?php if($act=='videoer') {?> class="active"<?php } ?>><a href="<?php echo url('videoer'); ?>">Videoer</a></li>
 					</ul>
-          
 					<!--<form class="navbar-search pull-right" action="">
             <input type="text" class="search-query span2" placeholder="Søg">
           </form>-->
           <div class="navbar-search pull-right">
 						<?php
-						echo render(drupal_get_form('search_block_form'));
+						 $form = drupal_get_form('search_block_form');
+             print render($form);
 						?>
           </div>
-          
-          
         </div><!-- /.nav-collapse -->
       </div>
     </div><!-- /navbar-inner -->
