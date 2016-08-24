@@ -55,6 +55,7 @@ else { ?>
 
       if ($countFlags == 0) {
         //$msg = 'Ingen har markeret sig som enig';
+        $msg = '';
       }
       elseif ($youFlagged) {
         $f = ($countFlags - 1);

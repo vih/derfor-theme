@@ -18,7 +18,7 @@
           Kære DJI’er og VIH'er
         </p>
         <p>
-          I 2017 er det 75 år siden, Svend Aage Thomsen grundlage Den Jyske
+          I 2017 er det 75 år siden, Svend Aage Thomsen grundlagde Den Jyske
           Idrætsskole. Det vil vi fejre!
           Derfor vil vi lave et festskrift, skrevet af alle DJI’ere og VIH'ere
           der har lyst til at bidrage.
