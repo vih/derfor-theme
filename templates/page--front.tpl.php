@@ -2,14 +2,13 @@
 <div class="container background">
   <?php include('inc/menu.inc.php'); ?>
   <div>
-    <?php
-    echo views_embed_view('nyeste_svar', 'block_1');
+    <?php echo views_embed_view('nyeste_svar', 'block_1');
     ?>
   </div>
   <div class="clearfix">
     <div class="leftregion clearfix">
       <div class="pull-right frontpagebox">
-        <img src="<?php echo $base_path . $directory; ?>/img/od.jpg"
+        <img src="<?php echo $base_path . $directory; ?>/img/od.png"
              alt="" style="width:240px;height:240px;"/>
       </div>
       <div class="inner" style="margin-bottom:0;">
@@ -19,15 +18,19 @@
           Kære DJI’er og VIH'er
         </p>
         <p>
-          I 2017 er det 75 år siden, Svend Aage Thomsen grundlage Den Jyske Idrætsskole. Det vil vi fejre!
-          Derfor vil vi lave et festskrift, skrevet af alle DJI’ere og VIH'ere der har lyst til at bidrage.
+          I 2017 er det 75 år siden, Svend Aage Thomsen grundlage Den Jyske
+          Idrætsskole. Det vil vi fejre!
+          Derfor vil vi lave et festskrift, skrevet af alle DJI’ere og VIH'ere
+          der har lyst til at bidrage.
         </p>
         <p>
           Hvad er Vejle Idrætshøjskole for en størrelse i dag?
         </p>
         <p>
-          Det vil jeg meget gerne høre din mening om. Derfor udsender jeg en række forskellige spørgsmål om VIH,
-          som jeg opfordrer alle jer DJI'ere/VIH’ere - nye som gamle - til at svare på.
+          Det vil jeg meget gerne høre din mening om. Derfor udsender jeg en
+          række forskellige spørgsmål om VIH,
+          som jeg opfordrer alle jer DJI'ere/VIH’ere - nye som gamle - til at
+          svare på.
         </p>
         <p>
           Du kan også gå ind og stemme på de bidrag, du synes er bedst. De
@@ -68,7 +71,7 @@
         </p>
       </div>
     </div>
-    <div>
+    <div style="width:240px;float:left;">
       <?php include('inc/sidebar.inc.php'); ?>
     </div>
   </div>
@@ -76,9 +79,7 @@
     <?php echo views_embed_view('ruc_videoer', 'block_1'); ?>
   </div>
   <div>
-    <?php
-    echo views_embed_view('popul_re_svar', 'block_1');
-    ?>
+    <?php echo views_embed_view('popul_re_svar', 'block_1'); ?>
   </div>
 </div>
 <?php include('inc/footer.inc.php'); ?>
