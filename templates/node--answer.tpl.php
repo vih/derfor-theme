@@ -28,12 +28,9 @@ else { ?>
       <p>
         <strong>Svar skrevet af</strong>:
         <?php
-        $ds = ldap_connect('ldaps://ldap.ruc.dk/', 636); // single connection
-        ldap_bind($ds, 'uid=derfor,ou=sysusr,dc=ruc,dc=dk', 'asygrLLJxRnEl9yOTBkP0o');
-        $search = ldap_search($ds, "ou=users,dc=ruc,dc=dk", "uid=" . $node->name);
-        $r = ldap_get_entries($ds, $search);
-        echo $r[0]['cn'][0] . ", ";
-        echo $r[0]['title'][0];
+        // We need to print
+        echo "Name, ";
+        echo "Relation";
         ?>
       </p>
       <?php echo render($content['field_answer']); ?>
