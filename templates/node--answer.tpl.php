@@ -1,12 +1,12 @@
 <?php if (!$page) { ?>
   <div class="clearfix">
     <h2
-      style="float:right;"><?php echo $node->field_question_reference['und'][0]['entity']->title; ?></h2>
+      style="float:right;"><?php echo $node->field_question_reference[LANGUAGE_NONE][0]['entity']->title; ?></h2>
   </div>
   <p>
     <strong>
       <?php
-      echo $node->field_question_reference['und'][0]['entity']->field_question['und'][0]['value'];
+      echo $node->field_question_reference[LANGUAGE_NONE][0]['entity']->field_question[LANGUAGE_NONE][0]['value'];
       ?>
     </strong>
   </p>
@@ -20,8 +20,8 @@ else { ?>
   <div class="answernode">
     <h2>
       <?php
-      echo $node->field_question_reference['und'][0]['entity']->title . ': ';
-      echo $node->field_question_reference['und'][0]['entity']->field_question['und'][0]['value'];
+      echo $node->field_question_reference[LANGUAGE_NONE][0]['entity']->title . ': ';
+      echo $node->field_question_reference[LANGUAGE_NONE][0]['entity']->field_question[LANGUAGE_NONE][0]['value'];
       ?>
     </h2>
     <div class="answercontent">

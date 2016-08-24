@@ -7,7 +7,7 @@
     )
   )); ?>">
     <?php echo theme_image(array(
-      'path' => $node->field_ruc_video_thumb['und'][0]['uri'],
+      'path' => $node->field_ruc_video_thumb[LANGUAGE_NONE][0]['uri'],
       'attributes' => array()
     )); ?>
   </a>

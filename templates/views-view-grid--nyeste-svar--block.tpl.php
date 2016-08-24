@@ -8,7 +8,7 @@
     echo '<div class="clearfix ' . $row_classes[$row_number] . '">';
     if ($row_number == 0) {
       echo '<div class="item col-1 logobox">
-		<div class="logotext"><a href="http://ruc.dk">RUC <span>Roskilde Universitet</span></a></div>
+		<div class="logotext"><a href="http://vih.dk">VIH <span>Vejle Idrætshøjskole</span></a></div>
 		</div>';
     }
     foreach ($columns as $column_number => $item) {
