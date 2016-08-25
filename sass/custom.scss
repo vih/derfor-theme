@@ -1,16 +1,31 @@
 $font: Verdana, Arial, sans-serif;
 $header-font: Georgia, serif;
+$grid-size: 220px;
+
+// Colors.
 $background-color: #FEF6E2;
 $text-color: #454F05;
 $black: #000;
 $white: #fff;
-$grid-size: 220px;
+$dark-grey: #BBB;
+$grey: rgb(212, 219, 205);
+$light-grey: #E5E5E5;
+$grid-featured: rgb(228, 31, 97);
+$grid-one: #d8f613;
+$grid-two: #b5d00a;
+$grid-three: #9be2e5;
+$grid-four: #64cdd2;
 
-body, p, div, li {
+body,
+p,
+div,
+li {
   font-size: 11px;
 }
 
-p, body, div {
+p,
+body,
+div {
   font-family: $font;
 }
 
@@ -18,7 +33,13 @@ h1 {
   margin-bottom: 20px;
 }
 
-h1, h2, h3, h4, h5, .navbar-inner li a, .brand {
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-inner li a,
+.brand {
   font-family: $header-font;
 }
 
@@ -146,10 +167,9 @@ a.greybtn {
 
 .navbar {
   margin-bottom: 0;
-}
-
-.navbar .brand:hover {
-  color: $white;
+  .brand:hover {
+    color: $white;
+  }
 }
 
 .navbar-inner, .search-query {
@@ -162,7 +182,7 @@ ul.tabs {
   padding: 0;
 
   li a {
-    border-bottom: 1px solid #BBB;
+    border-bottom: 1px solid $dark-grey;
   }
 
   li.active {
@@ -171,12 +191,12 @@ ul.tabs {
 }
 
 .footer {
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid $light-grey;
   padding: 15px 0 36px;
 }
 
 .questionofweek {
-  background-color: rgb(228, 31, 97);
+  background-color: $grid-featured;
   color: $white;
   height: $grid-size;
   padding: 10px;
@@ -236,7 +256,7 @@ ul.tabs {
     }
 
     a {
-      color: #333;
+      color: $text-color;
     }
   }
   /*
@@ -256,34 +276,34 @@ ul.tabs {
     }
 
     .answerlink a {
-      background-color: white;
-      color: #D4DBCD;
+      background-color: $white;
+      color: $light-grey;
       font-size: 16px;
       padding: 3px 2px 3px 1px;
     }
 
     .col-1 .answerlink a {
-      color: rgb(162, 215, 222);
+      color: $grid-three;
     }
 
     .col-2 .answerlink a {
-      color: rgb(210, 214, 2);
+      color: $grid-two;
     }
 
     .col-3 .answerlink a {
-      color: rgb(212, 219, 205);
+      color: $grey;
     }
 
     .col-4 .answerlink a {
-      color: rgb(228, 31, 97);
+      color: $grid-featured;
     }
 
     .col-5 .answerlink a {
-      color: rgb(186, 190, 149);
+      color: $dark-grey;
     }
 
     .col-6 .answerlink a {
-      color: rgb(110, 196, 203);
+      color: $grid-four;
     }
   }
 
@@ -294,7 +314,7 @@ ul.tabs {
       width: 240px;
 
       &.text {
-        background-color: #b5d00a;
+        background-color: $grid-two;
       }
 
     }
@@ -306,31 +326,31 @@ ul.tabs {
 
   .row-1 {
     .col-1 {
-      background-color: #b5d00a;
+      background-color: $grid-two;
     }
 
     .col-2 {
-      background-color: #64cdd2;
+      background-color: $grid-four;
     }
 
     .col-3 {
-      background-color: #c5c596;
+      background-color: $dark-grey;
     }
 
     .col-4 {
-      background-color: #d8f613;
+      background-color: $grid-one;
     }
 
     .col-5 {
-      background-color: #ff005f;
+      background-color: $grid-featured;
     }
 
     .col-6 {
-      background-color: #d8f613;
+      background-color: $grid-one;
     }
 
     .col-7 {
-      background-color: #fef6e2;
+      background-color: $background-color;
       height: 240px;
       margin: 0;
       padding: 0;
@@ -338,61 +358,61 @@ ul.tabs {
     }
 
     .col-8 {
-      background-color: #9be2e5;
+      background-color: $grid-three;
     }
   }
 
   .row-2 {
     .col-1 {
-      background-color: #ff005f;
+      background-color: $grid-featured;
     }
 
     .col-2 {
-      background-color: #d8f613;
+      background-color: $grid-one;
     }
 
     .col-3 {
-      background-color: #fef6e2;
+      background-color: $background-color;
     }
 
     .col-4 {
-      background-color: #9be2e5;
+      background-color: $grid-three;
     }
   }
 
   .row-3 {
     .col-1 {
-      background-color: #9be2e5;
+      background-color: $grid-three;
     }
 
     .col-2 {
-      background-color: #fef6e2;
+      background-color: $background-color;
     }
 
     .col-3 {
-      background-color: #64cdd2;
+      background-color: $grid-four;
     }
 
     .col-4 {
-      background-color: #ff005f;
+      background-color: $grid-featured;
     }
   }
 
   .row-4 {
     .col-1 {
-      background-color: #d8f613;
+      background-color: $grid-one;
     }
 
     .col-2 {
-      background-color: #b5d00a;
+      background-color: $grid-two;
     }
 
     .col-3 {
-      background-color: #d8f613;
+      background-color: $grid-one;
     }
 
     .col-4 {
-      background-color: #b5d00a;
+      background-color: $grid-two;
     }
   }
 }
@@ -419,7 +439,7 @@ ul.tabs {
 table {
   &.cols-3 {
     .span4 {
-      background-color: rgb(162, 215, 222);
+      background-color: $grid-three;
       margin-bottom: 15px;
       margin-right: 15px;
       min-height: 270px;
