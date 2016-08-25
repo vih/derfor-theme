@@ -12,45 +12,7 @@
              alt="" style="width:240px;height:240px;"/>
       </div>
       <div class="inner" style="margin-bottom:0;">
-        <h2>Vejle Idrætshøjskole fylder 75 år<br/>
-          – vær med til at skabe festskriftet</h2>
-        <p>
-          Kære DJI’er og VIH'er
-        </p>
-        <p>
-          I 2017 er det 75 år siden, Svend Aage Thomsen grundlagde Den Jyske
-          Idrætsskole. Det vil vi fejre!
-          Derfor vil vi lave et festskrift, skrevet af alle DJI’ere og VIH'ere
-          der har lyst til at bidrage.
-        </p>
-        <p>
-          Hvad er Vejle Idrætshøjskole for en størrelse i dag?
-        </p>
-        <p>
-          Det vil jeg meget gerne høre din mening om. Derfor udsender jeg en
-          række forskellige spørgsmål om VIH,
-          som jeg opfordrer alle jer DJI'ere/VIH’ere - nye som gamle - til at
-          svare på.
-        </p>
-        <p>
-          Du kan også gå ind og stemme på de bidrag, du synes er bedst. De
-          bidrag der får flest stemmer, vil blive udgivet i et festskrift. Alle
-          bidragsydere vil fremstå som forfattere af skriftet, da det netop er
-          jer, der er med til at skabe indhold og værdi til VIH samt til
-          fejringen af VIH’s 75-års jubilæum.
-        </p>
-        <p>
-          Jeg håber, at du vil være med til at afspejle, hvad VIH betyder for
-          dig, og hvad VIH har at byde på i det danske samfund anno 2017.
-          Jeg ser meget frem til at læse jeres svar her på Derfor VIH.
-        </p>
-        <p>
-          Med venlig hilsen
-        </p>
-        <p>
-          Ole Damgaard<br/>
-          Forstander
-        </p>
+        <?php print render($page['content']); ?>
         <p>
           <!-- AddThis Button BEGIN -->
         <div
