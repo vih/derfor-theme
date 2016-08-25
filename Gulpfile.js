@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var sassdoc = require('sassdoc');
+var sassLint = require('gulp-sass-lint');
 
 var sassOptions = {
     errLogToConsole: true,
@@ -47,6 +48,13 @@ gulp.task('watch', function() {
         .on('change', function(event) {
             console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
         });
+});
+
+gulp.task('scss-lint', function() {
+    return gulp.src(input)
+        .pipe(sassLint())
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError());
 });
 
 gulp.task('prod', ['sassdoc'], function () {
