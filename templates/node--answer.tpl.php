@@ -29,8 +29,8 @@ else { ?>
         <strong>Svar skrevet af</strong>:
         <?php
         // We need to print
-        echo "Name, ";
-        echo "Relation";
+        echo $name;
+        //echo "Relation";
         ?>
       </p>
       <?php echo render($content['field_answer']); ?>
@@ -39,7 +39,7 @@ else { ?>
       <?php
       global $user;
       if (empty($user->uid)) {
-        echo '<a href="' . url('cas', array('query' => array('destination' => $_GET['q']))) . '" class="greybtn"><span></span>';
+        echo '<a href="' . url('user', array('query' => array('destination' => $_GET['q']))) . '" class="greybtn"><span></span>';
         echo 'Log ind for at stemme</a> ';
       }
       else {
