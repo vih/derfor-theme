@@ -22,8 +22,8 @@
           <a class="addthis_button_linkedin" title="Del på LinkedIn"></a>
           <a class="addthis_button_email" title="Del via e-mail"></a>
         </div>
-        <script type="text/javascript"
-                src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f9d7f8443af8d5e"></script>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f3a137c5cd412de"></script>
         <script type="text/javascript">
           var addthis_config = {
             ui_language: "da"
