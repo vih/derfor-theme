@@ -83,8 +83,13 @@ td {
 }
 
 .logobox {
-  background: url(../img/vih_logo.png) no-repeat center center;
   position: relative;
+
+  img {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+  }
 }
 
 .frontpagebox {

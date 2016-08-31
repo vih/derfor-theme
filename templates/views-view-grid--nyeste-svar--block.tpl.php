@@ -7,7 +7,7 @@
   foreach ($rows as $row_number => $columns) {
     echo '<div class="clearfix ' . $row_classes[$row_number] . '">';
     if ($row_number == 0) {
-      echo '<div class="item col-1 logobox"></div>';
+      echo '<div class="item col-1 logobox"><img src="' . theme_get_setting('logo') .'" alt="Logo" /></div>';
     }
     foreach ($columns as $column_number => $item) {
       $cid = $column_classes[$row_number][$column_number];
