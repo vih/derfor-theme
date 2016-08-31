@@ -1,6 +1,7 @@
 $font: Verdana, Arial, sans-serif;
 $header-font: Georgia, serif;
 $grid-size: 220px;
+$front-page-box-size: 240px;
 
 // Colors.
 $background-color: #FEF6E2;
@@ -82,40 +83,14 @@ td {
 }
 
 .logobox {
-  background: url(../img/ruc_logo.png) no-repeat 15px 15px;
+  background: url(../img/vih_logo.png) no-repeat center center;
   position: relative;
-
-  .logotext {
-    bottom: 2px;
-    position: absolute;
-
-    span {
-      color: $text-color;
-      display: block;
-      font-family: $header-font;
-      font-size: 17px;
-      line-height: 17px;
-      padding-bottom: 5px;
-      padding-left: 2px;
-    }
-
-    a {
-      color: $text-color;
-      font-family: $header-font;
-      font-size: 40px !important;
-      line-height: 35px !important;
-    }
-
-    a:hover {
-      text-decoration: none;
-    }
-  }
 }
 
 .frontpagebox {
-  height: 240px;
+  height: $front-page-box-size;
   overflow: hidden;
-  width: 240px;
+  width: $front-page-box-size;
 }
 
 .node-answer-form .filter-wrapper {
@@ -351,10 +326,10 @@ ul.tabs {
 
     .col-7 {
       background-color: $background-color;
-      height: 240px;
+      height: $front-page-box-size;
       margin: 0;
       padding: 0;
-      width: 240px;
+      width: $front-page-box-size;
     }
 
     .col-8 {
@@ -416,7 +391,6 @@ ul.tabs {
     }
   }
 }
-
 
 .view {
   .pager {
