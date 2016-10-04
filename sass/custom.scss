@@ -72,10 +72,16 @@ td {
 #search-block-form, #search-block-form .form-item {
   margin-bottom: 0;
   margin-top: 0;
-}
 
-#search-block-form .form-actions {
-  display: none;
+  .form-actions {
+    display: none;
+  }
+
+  .form-item {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
 }
 
 .search-query {
